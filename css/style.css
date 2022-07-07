@@ -99,6 +99,10 @@ html{
     opacity: 0;
 }
 
+@media (max-width:470px) {
+    
+}
+
 .hero_content .header h3.fadeIn{
     animation-name: fadeInh3;
     animation-duration: 1s;
@@ -128,6 +132,14 @@ html{
     font-weight: bold;
     opacity: 0;
 }
+
+@media (max-width:470px) {
+    .hero_content .header h2{
+        top: 8vh !important;
+    }
+}
+
+
 
 .hero_content .header h2.fadeIn {
     animation-name: fadeInh2;
@@ -221,12 +233,14 @@ html{
 }
 
 @media (max-width:470px) {
-    .hero_content .header h2{
-        top:75px;
-    }
     .hero_content .header h1{
         font-size: 40px;
-        top: 90px;
+    }
+}
+
+@media (max-width:367px) {
+    .hero_content .header h3{
+        font-size: 25px;
     }
 }
 
@@ -330,16 +344,12 @@ html{
     }
 }
 
-/* @media only screen and (max-height:1024px) and (max-width:768px) {
+@media only screen and (max-height:1024px) and (max-width:768px) {
     .person_cutout{
         left: -50%;
         top: 8em
     }
-    .caption{
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
+
 }
 
 @media only screen and (max-height:915px) and (max-width:412px) {
@@ -359,7 +369,7 @@ html{
     .person_cutout{
         top: 0;
     }
-} */
+}
 
 
 .introduction_section

@@ -1,0 +1,474 @@
+html{
+    scroll-behavior: smooth;
+}
+
+.logo img{
+    height: 50px;
+    position: absolute;
+    right: 20px;
+    top: 30px;
+}
+
+.side_tabs
+{
+    height: 180px;
+    width: 30px;
+    border-radius: 50px;
+    background-color: rgba(0,0,0,0.3);
+    position: fixed;
+    top: 35%;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    z-index: 5;
+}
+.side_tabs .pill
+{
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.outer_pill
+{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.cap_on_pill{
+    position: absolute;
+}
+
+.outer_pill:hover{
+    animation-name: borderColor;
+    animation-duration: 0.5s ;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+}
+
+@keyframes borderColor {
+    0%{
+        outline: 0px solid white;
+    }
+    100%{
+        outline: 1px solid white;
+    }
+}
+
+
+.hero_section
+{
+    width: 100%;
+    height: 100vh;
+    color: white;
+    position: relative;
+}
+
+.backgroundImage_heroSection{
+    position: absolute;
+    height: 130vh;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.hero_content
+{
+    position: relative;
+    top: 100px;
+}
+.hero_content .header{
+    position: relative;
+    height: 40vh;
+}
+.hero_content .header h3
+{
+    font-size: 40px;
+    position: absolute;
+    left: 20%;
+    opacity: 0;
+}
+
+.hero_content .header h3.fadeIn{
+    animation-name: fadeInh3;
+    animation-duration: 1s;
+    animation-delay: 0.4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInh3 {
+    0%{
+        opacity: 0;
+        transform: translateX(10px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+
+
+.hero_content .header h2{
+    position: absolute;
+    top: 6vh;
+    left: 30%;
+    font-size: 5rem;
+    font-weight: bold;
+    opacity: 0;
+}
+
+.hero_content .header h2.fadeIn {
+    animation-name: fadeInh2;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInh2 {
+    0% {
+        opacity: 0;
+        transform: translateX(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.hero_content .header h1{
+    position: absolute;
+    top: 16vh;
+    left: 20%;
+    font-size: bolder;
+    font-size: 8em;
+    opacity: 0;
+}
+
+
+
+.hero_content .header h1.fadeIn {
+    animation-name: fadeInh3;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInh3 {
+    0% {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+@media (max-width:992px) {
+    .hero_content .header h1{
+        left: 16%;
+        font-size: 7em;
+    }
+}
+
+@media screen and (max-width:991.98px) {
+    .hero_content .header h1{
+        left: 0%;
+    }
+    .hero_content .header h2{
+        left: 20%;
+        font-size:4.5em ;
+    }
+    .hero_content .header h3{
+        left: 5%;
+    }
+}
+
+@media (max-width:768px) {
+    .hero_content .header h1{
+        font-size: 5em;
+        left: 10%;
+    }
+}
+
+@media (max-width:614px) {
+    .hero_content .header h1{
+        font-size: 4em;
+    }
+    .hero_content .header h2{
+        left: 10%;
+        font-size: 3em;
+    }
+    .caption{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width:470px) {
+    .hero_content .header h2{
+        top:75px;
+    }
+    .hero_content .header h1{
+        font-size: 40px;
+        top: 90px;
+    }
+}
+
+.social_icons{
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    position: relative;
+    bottom: -40vh;
+    right: 30px;
+}
+
+.social_icons a{
+    color: white;
+    height: 30px;
+    width: 30px;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.social_icons a:hover{
+    color: white;
+}
+
+.img_content{
+    position: relative !important;
+}
+
+
+
+.ring{
+    position: absolute;
+    right: 40px;
+}
+
+
+
+
+
+.person_cutout
+{
+    position: absolute;
+    top: 0;
+    left: 20%;
+    top: -3em;
+}
+
+.caption{
+    opacity: 0;
+}
+
+.caption.fadeIn{
+    animation-name: fadeInCaption;
+    animation-duration: 1s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+
+}
+
+
+@keyframes fadeInCaption {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@media (max-width:1199.98px) {
+    .person_cutout{
+        left: 7%;
+    }
+}
+
+@media (max-width:991.98px) {
+    .person_cutout{
+        left: -27%;
+    }
+}
+
+@media (max-width:767.98px) {
+    .person_cutout{
+        left: -37%;
+    }
+    .caption{
+        position: absolute;
+        /* right: 0; */
+    }
+}
+
+@media (max-width:575.98px) {
+    .person_cutout{
+        left: -30%;
+    }
+}
+
+/* @media only screen and (max-height:1024px) and (max-width:768px) {
+    .person_cutout{
+        left: -50%;
+        top: 8em
+    }
+    .caption{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media only screen and (max-height:915px) and (max-width:412px) {
+    .person_cutout{
+        left: -60%;
+        top: 5em;
+    }
+}
+
+@media only screen and (max-width:390px) and (max-height:844px) {
+    .person_cutout{
+        top: 3em;
+    }
+}
+
+@media only screen and (max-width:360px) and (max-height:740px) {
+    .person_cutout{
+        top: 0;
+    }
+} */
+
+
+.introduction_section
+{
+    position: relative;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.introduction_half_background{
+    position: absolute;
+    z-index: -1;
+    height: 80vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.introduction_content
+{
+    margin-top: 100px;
+   padding: 15px 0px;
+   opacity: 0;
+   transform: translateY(20px);
+   transition: all 0.7s linear;
+}
+
+.introduction_content.slideFromBottom{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (max-width:991.98px) {
+    .introduction_half_background{
+        height: 100vh;
+    }
+}
+
+.data_section
+{
+    /* top: -148px; */
+    height: 130vh;
+    position: relative;
+    color: white;
+    width: 100%;
+    background-image: url(../assets/section-1-half.png);
+    background-color: red;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.data_img .person-line{
+    position: absolute;
+    right: 150px;
+    top: 65vh;
+}
+
+.top_line{
+    z-index: 5;
+    position: absolute;
+    top: 400px;
+    left: 14%;
+}
+
+.line{
+    height: 180px;
+    width: 1px;
+    background-color: white;
+    position: absolute;
+    top: 72px;
+    right: 40%;
+}
+
+
+
+.data_caption
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    top: 80px;
+    height: 100vh;
+}
+
+.data_caption h1, .data_caption h3{
+    font-weight: bold;
+}
+
+.data_img h1{
+    font-weight: bold;
+    position: absolute;
+    top: 320px;
+    right: 36%;
+}
+
+.data_img small{
+    position: absolute;
+    top: 450px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.half-png{
+    position: absolute;
+    height: 200px;
+    top: 250px;
+    right: 32%;
+}

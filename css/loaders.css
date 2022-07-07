@@ -1,0 +1,56 @@
+/* <div class="preloader-double-torus"></div>*/ 
+
+.preloader-double-torus {
+    width: 49px;
+    height: 49px;
+    margin: 0 auto;
+    border: 4px double;
+    border-radius: 50%;
+    border-color: transparent rgba(0, 0, 0, 0.9) rgba(0, 0, 0, 0.9);
+    animation: cssload-spin 960ms 1 linear;
+    animation-fill-mode: forwards;
+    transform: rotate(-60deg);
+    -o-animation: cssload-spin 960ms 1 linear;
+    -ms-animation: cssload-spin 960ms 1 linear;
+    -webkit-animation: cssload-spin 960ms 1 linear;
+    -moz-animation: cssload-spin 960ms 1 linear;
+}
+
+@keyframes cssload-spin {
+    100% {
+        transform: rotate(300deg);
+        transform: rotate(300deg);
+    }
+}
+
+
+@-o-keyframes cssload-spin {
+    100% {
+        -o-transform: rotate(300deg);
+        transform: rotate(300deg);
+    }
+}
+
+
+@-ms-keyframes cssload-spin {
+    100% {
+        -ms-transform: rotate(300deg);
+        transform: rotate(300deg);
+    }
+}
+
+
+@-webkit-keyframes cssload-spin {
+    100% {
+        -webkit-transform: rotate(300deg);
+        transform: rotate(300deg);
+    }
+}
+
+
+@-moz-keyframes cssload-spin {
+    100% {
+        -moz-transform: rotate(300deg);
+        transform: rotate(300deg);
+    }
+}

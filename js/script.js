@@ -119,3 +119,38 @@ function cardDOMEffect(){
 } 
 
 cardDOMEffect()
+
+function sideBarScrollEffect(){
+    let data_section = document.querySelector(".data_section")
+    let cap_on_pill = document.querySelector(".cap_on_pill")
+    document.addEventListener("scroll", function(){
+        if(window.pageYOffset > 1000){
+            cap_on_pill.style.top = "45px"
+            return
+        }else{
+            cap_on_pill.style.top = "10px"
+        }
+    })
+    
+}
+
+sideBarScrollEffect()
+
+function pillEvent(){
+    let pill_1 = document.querySelector("#pill_1")
+    let hero_section = document.querySelector(".hero_section")
+    let pill_2 = document.querySelector("#pill_2")
+    let data_section = document.querySelector(".data_section")
+    pill_1.addEventListener("click", function(){
+        hero_section.scrollIntoView({
+            behavior: "smooth"
+        })
+    })
+    pill_2.addEventListener("click", function(){
+        data_section.scrollIntoView({
+            behavior: "smooth"
+        })
+    })
+}
+
+pillEvent()

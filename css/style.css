@@ -634,3 +634,98 @@ html{
         transform: rotate(0);
     }
 }
+
+.personalization{
+    height: 100vh;
+    width: 100%;
+    padding: 100px 0;
+    position: relative;
+    /* background-color: violet; */
+}
+
+.mycard{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+    align-items: center;
+    padding: 10px 20px;
+    cursor: pointer;
+
+    opacity: 0.3;
+}
+
+.mycard small{
+    font-size: 10px;
+}
+
+input[type="radio"]{
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+input[type="radio"].active ~ label > .mycard{
+    opacity: 1;
+    transition: all 0.4s ease;
+}
+
+
+.image_border{
+    height:100%;
+    width:auto;
+    border: 1px solid rgba(0,0,0,0.3);
+    padding: 10px;
+    border-radius: 50%;
+    
+}
+
+.mycard  .card_img{
+    height:100px;
+    width: 100px;
+    border-radius: 100%;
+    object-fit: cover;
+    mix-blend-mode:luminosity; 
+    transition: all 0.4s ease-in-out;
+}
+
+.mycard  .card_img:hover{
+    mix-blend-mode: normal;
+    opacity: 1;
+}
+
+.card_quote{
+    transition: all 0.4s ease-in-out;
+    transform: translateX(-10px);
+}
+
+.para1, .para2{
+    font-size: 14px;
+}
+
+
+.animate_card1, .animate_card2, .animate_card3{
+    animation-name: animate_card;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.2s;
+    opacity: 0;
+}
+
+@keyframes animate_card {
+    0%{
+        opacity: 0;
+        transform: translateX(10px);
+    }100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.personalization .side_img{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: -1;
+    width: 100%;
+}

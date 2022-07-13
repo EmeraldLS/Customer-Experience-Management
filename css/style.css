@@ -436,13 +436,13 @@ html{
     position: relative;
     color: white;
     width: 100%;
-    height: 100vh;
+    height: 125vh;
 }
 
 .data_section_backgroundImage{
-    height: 120vh;
+    height: 125vh;
     width: 100%;
-    /* object-fit: cover; */
+    object-fit: cover;
     position: absolute;
     z-index: -1;
     pointer-events: none;
@@ -658,11 +658,23 @@ html{
 }
 
 .personalization{
-    height: 100vh;
+    min-height: 125vh;
+    height: 100%;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 100px 0;
     position: relative;
-    /* background-color: violet; */
+}
+
+.personalization_bgImage{
+    min-height: 125vh;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    pointer-events: none;
 }
 
 .mycard{
@@ -672,7 +684,6 @@ html{
     align-items: center;
     padding: 10px 20px;
     cursor: pointer;
-
     opacity: 0.3;
 }
 
@@ -721,7 +732,7 @@ input[type="radio"].active ~ label > .mycard{
 }
 
 .para1, .para2{
-    font-size: 14px;
+    font-size: 10px;
 }
 
 
@@ -744,12 +755,83 @@ input[type="radio"].active ~ label > .mycard{
     }
 }
 
-.personalization .side_img{
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    z-index: -1;
-    width: 100%;
-    height: 100vh;
+.tweet_section{
+    position: relative;
+}
+.tweet_section p{
+    font-size: 12px;
+    margin: 0 80px;
+    padding-top: 20px;
+    /* line-height: 10px; */
 }
 
+@media (max-width:500px) {
+    .tweet_section p {
+        margin-left: 60px;
+        margin-right: 40px;
+    }
+}
+
+.quote_1{
+    position: absolute;
+}
+.quote_2{
+    position: absolute;
+    bottom:-30px;
+    right: 0;
+}
+
+.quote_line{
+    height: 1px;
+    width: 70%;
+    margin: 0 80px;
+    margin-top: 10px;
+    background-color: rgba(0, 83, 157, 0.5);
+}
+
+.tactics_section{
+    height: 130vh;
+    position: relative;
+    color: white;
+    background-image: url(../assets/section2-half.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+/* 
+.tactics_bgImage{
+    position: absolute;
+    width: 100%;
+    height: 130vh;
+    z-index: -1;
+    object-fit: cover;
+
+} */
+
+.tactics_content{
+    margin-top: 100px;
+    position: relative;
+}
+
+.tactics_content p{
+    font-size: 12px;
+}
+
+.tactics_content img{
+    position: relative;
+    top: 60px;
+    left: 100px;
+}
+
+.tactics_content .percent{
+    position: absolute;
+    bottom: -10px;
+    left: 150px;
+}
+
+@media (max-width:768px) {
+    .tactics_content div{
+        display: none;
+    }
+}

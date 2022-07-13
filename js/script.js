@@ -86,7 +86,15 @@ function cardDOMEffect(){
                         <p class="para2">
                         In order to personalize, we need to understand data such as buyer intent, funnel stage, preferred content types, and channels of consumption. Once you know this (assuming you have the content to deliver on buyer needs) personalization can move beyond "Hey [FNAME].”
                         </p>
+                        <div class="tweet_section">
+                                <img src="./assets/quote-l-3-half.png" alt="" class="quote_1">
+                                <strong><p>In order to personalize the customer experience, we need to understand data such as buyer's intent, funnel stage, preferred content types, and channels of consumption. @BrennerMichael</p></strong>
+                                <div class="quote_line"></div>
+                                <p style="color: #00539D; font-weight: bold;display: flex;gap: 10px;justify-content: center;">Click to Tweet <i class="fab fa-twitter fa-2x"></i></p>
+                                <img src="./assets/quote-r-half.png" alt="" class="quote_2">
+                            </div>
                         </div>
+                        
                         `
                         // para1.innerHTML = ``
                         // para2.innerHTML = ` `
@@ -98,6 +106,13 @@ function cardDOMEffect(){
                         <p class="para2">
                         Capturing feedback—whether it's through voice communications, facial recognition technologies, changes in purchase behavior, or surveys—requires fast methodologies to understand it, analyze it, and take action where required. Technology and data science is by far the most relevant way to directly improve customer experiences through feedback, and taking action will help brands understand their customers better and create long-lasting loyalty. A human touch also helps!
                         </p>
+                        <div class="tweet_section">
+                                <img src="./assets/quote-l-3-half.png" alt="" class="quote_1">
+                                <strong><p>Customer feedback can make or break a brand if it's isn't dealt with effectively. @MarketingGeyeus</p></strong>
+                                <div class="quote_line"></div>
+                                <p style="color: #00539D; font-weight: bold;display: flex;gap: 10px;justify-content: center;">Click to Tweet <i class="fab fa-twitter fa-2x"></i></p>
+                                <img src="./assets/quote-r-half.png" alt="" class="quote_2">
+                            </div>
                         </div>
                         `
                     }else if(cards[i].getAttribute("id") == "card3"){
@@ -106,6 +121,13 @@ function cardDOMEffect(){
                         <p class="para2">
                         And even though we are a B2B business, we focus on understanding current and future needs at the company, location, and individual level. This holistic view enables us to fully customize and personalize interactions across the customer journey—from a website experience to email content to a product alert to an executive workshop. By harnessing the power of our data and analytics to deliver a tailored customer experience, we have successfully improved loyalty and deepened relationships.
                         </p>
+                        <div class="tweet_section">
+                                <img src="./assets/quote-l-3-half.png" alt="" class="quote_1">
+                                <strong><p>The key to unlocking a personalized and exceptional experience is data and analytics. @RachelRitcher</p></strong>
+                                <div class="quote_line"></div>
+                                <p style="color: #00539D; font-weight: bold;display: flex;gap: 10px;justify-content: center;">Click to Tweet <i class="fab fa-twitter fa-2x"></i></p>
+                                <img src="./assets/quote-r-half.png" alt="" class="quote_2">
+                            </div>
                         </div>
                         `
                     }

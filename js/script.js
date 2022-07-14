@@ -72,8 +72,6 @@ animatePng()
 function cardDOMEffect(){
     let cards = document.getElementsByName("card")
     let card_quote_header = document.querySelector(".card_quote")
-    let para1 = document.querySelector(".card_quote .para1")
-    let para2 = document.querySelector(".card_quote .para2")
     cards.forEach(card => {
         card.addEventListener("change", function(){
             for(var i = 0; i < cards.length; i++){
@@ -176,3 +174,128 @@ function pillEvent(){
 }
 
 pillEvent()
+
+function cardDOMEffect2(){
+    let touch_card_name = document.getElementsByName("touch_card_name")
+    let card_quote_header = document.querySelector(".card_quote2")
+    touch_card_name.forEach(card => {
+        card.addEventListener("change", function(){
+            for(var i = 0; i < touch_card_name.length; i++){
+                if(touch_card_name[i] == this) {
+                    touch_card_name[i].classList.add("active")
+
+                    if(touch_card_name[i].getAttribute("id") == "touch_card_1"){
+                        card_quote_header.innerHTML = `
+                            <div class="animate_touch_card">
+                            <h4><strong>Remove Obstacles & Recognize Emotions for a Seamless Experience</strong></h4>
+                            <p class="para1">Creating a holistic and comprehensive customer experience requires a full understanding of where your customers could first be introduced to your brand, the unique pathways that could be possible, and the reasons why a customer found your brand.</p>
+                            <p class="para2">
+                                Marketers need to use this information to create a seamless multi-touch experience that guides customers or potential customers to what they are looking for, without added steps that can deter or confuse them.
+                            </p>
+                            <p class="para3">
+                                We need to answer their questions before they ask. This is what makes for a sophisticated and effective customer experience. It's not about telling the customer how to feel, it's about informing them, guiding them to their own conclusions, and recognizing their emotions. 
+                            </p>
+                            <div class="tweet_section">
+                                <img src="./assets/green-left-quote-1-half.png" alt="" class="quote_1">
+                                <strong>
+                                    <p>Marketers need to answer their customers' questions before they're even asked. This is what makes for a sophisticated and effective customer experience. @CynthiaLIVE</p>
+                                </strong>
+                                <div class="quote_line2"></div>
+                                <p
+                                    style="color: green; font-weight: bold;display: flex;gap: 10px;justify-content: center;cursor: pointer;">
+                                    Click to Tweet <i class="fab fa-twitter fa-2x"></i></p>
+                                <img src="./assets/green-right-quote-1-half.png" alt="" class="quote_2">
+                            </div>
+                            </div>
+                        `
+                        // para1.innerHTML = ``
+                        // para2.innerHTML = ` `
+                        // document.querySelector(".card_quote").classList.add("animate_card1")
+                        
+                    }else if(touch_card_name[i].getAttribute("id") == "touch_card_2"){
+                        card_quote_header.innerHTML = `
+                            <div class="animate_touch_card">
+                            <h4><strong>Start By Considering How to Fit Into the Customer’s Life</strong></h4>
+                            <p class="para1">Despite all of the talk about "customer-centricity,"brands are still inwardly focused, by and large. It's understandable: brand managers live and breathe the brands they represent, and have an outsized enthusiasm for them. This isn't necessarily a bad thing—we need brand managers to believe in what they represent. </p>
+                            <p class="para2">
+                                But unless you're Starbucks, people generally don't wake up thinking about your brand. They have other priorities: kids to get to get to school, assignments that are due, conference calls, doctor's appointments, and a thousand other things. Considering how you fit into a consumer's life is a much more important part of the experience creation than any other part of it. 
+                            </p>
+                            <p class="para3">
+                                The more brands that approach their experiences by truly understanding their customers and seeing the world through their perspectives, the better off we'll all be. 
+                            </p>
+                            <div class="tweet_section">
+                                <img src="./assets/green-left-quote-1-half.png" alt="" class="quote_1">
+                                <strong>
+                                    <p>Consider how you fit into a consumer's life is a muc more important part of the experience creation than any other part of it. @ScottMonty</p>
+                                </strong>
+                                <div class="quote_line2"></div>
+                                <p
+                                    style="color: green; font-weight: bold;display: flex;gap: 10px;justify-content: center;cursor: pointer;">
+                                    Click to Tweet <i class="fab fa-twitter fa-2x"></i></p>
+                                <img src="./assets/green-right-quote-1-half.png" alt="" class="quote_2">
+                            </div>
+                            </div>
+                        `
+                    }else if(touch_card_name[i].getAttribute("id") == "touch_card_3"){
+                        card_quote_header.innerHTML = `
+                        <div class="animate_touch_card">
+                        <h4><strong>Build Trust in Each Phase of the Buyer Experience</strong></h4>
+                        <p class="para1">A little empathy and a lot of data can go a long way when it comes to providing customers what they need in order to trust and buy. The three fundamental steps of the buyer experience in which brands should work to build trust are:</p>
+                            <ol class="list">
+                                <li><b>Attract:</b>  Understand how customers discover new solutions, and create relevant marketing in all the channels they use.
+                                </li>
+                                <li><b>Engage:</b> Use insights about content topic and format preferences to deliver the right kind of content experience.
+                                </li>
+                                <li><b>Convert:</b> Provide compelling triggers to action to help buyers understand what the solution is, how it matters to them, and what to do next. </li>
+                            </ol>
+                        <div class="para2">
+                            Data-informed insights about customer preferences around information discovery, consumption, and engagement are critical for providing the most relevant and meaningful experience.
+                        </div>
+                        <div class="tweet_section">
+                            <img src="./assets/green-left-quote-1-half.png" alt="" class="quote_1">
+                            <strong>
+                                <p>A little empathy and a lot of data can go a long way when it comes to providing customers what they need in order to trust and buy. @leeodden</p>
+                            </strong>
+                            <div class="quote_line2"></div>
+                            <p
+                                style="color: green; font-weight: bold;display: flex;gap: 10px;justify-content: center;cursor: pointer;">
+                                Click to Tweet <i class="fab fa-twitter fa-2x"></i></p>
+                            <img src="./assets/green-right-quote-1-half.png" alt="" class="quote_2">
+                        </div>
+                        </div>
+                        `
+                    }
+                    else if(touch_card_name[i].getAttribute("id") == "touch_card_4"){
+                        card_quote_header.innerHTML = `
+                            <div class="animate_touch_card"><h4><strong>Use Deeper Touchpoints to Better Partner with Customers</strong></h4>
+                            <p class="para1">At Palo Alto Networks, our mission is to partner with our customers to ensure that they can protect their businesses from cyberthreats that are becoming so prevalent in this digital age. While we of course want to engage new leads and highlight key messaging, it's also important for our customers to know that we're there for them throughout their journey.</p>
+                            <div class="para2">
+                                
+                                Customers want to know that we're an authority in the security space and that they can trust our products to secure their most valuable assets. This requires deeper touchpoints with our customers to ensure that we're not just telling them what problems we solve, but also how to use our products in the best way to protect their environments.
+                            </div>
+                            <div class="tweet_section">
+                                <img src="./assets/green-left-quote-1-half.png" alt="" class="quote_1">
+                                <strong>
+                                    <p>Customers want to know that your brand is an authority and that they can trust your products to secure their most valuable assets. @PaloAltoNtwks</p>
+                                </strong>
+                                <div class="quote_line2"></div>
+                                <p
+                                    style="color: green; font-weight: bold;display: flex;gap: 10px;justify-content: center;cursor: pointer;">
+                                    Click to Tweet <i class="fab fa-twitter fa-2x"></i></p>
+                                <img src="./assets/green-right-quote-1-half.png" alt="" class="quote_2">
+                            </div>
+                            </div>
+                        `
+                    }
+                }
+                
+                else{
+                    touch_card_name[i].classList.remove("active")
+                }
+            }  
+            
+        })
+    })
+} 
+
+cardDOMEffect2()

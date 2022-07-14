@@ -680,10 +680,11 @@ html {
     justify-content: center;
     padding: 100px 0;
     position: relative;
+    top: -88px;
 }
 
 .personalization_bgImage {
-    min-height: 125vh;
+    height: 120vh;
     width: 100%;
     position: absolute;
     z-index: -1;
@@ -745,14 +746,17 @@ input[type="radio"].active~label>.mycard {
 }
 
 .para1,
-.para2 {
-    font-size: 10px;
+.para3,
+.para2, .list li {
+    font-size: 12px;
+    margin-bottom: 20px;
 }
 
 
 .animate_card1,
 .animate_card2,
-.animate_card3 {
+.animate_card3,
+.animate_touch_card {
     animation-name: animate_card;
     animation-duration: 1s;
     animation-fill-mode: forwards;
@@ -818,6 +822,9 @@ input[type="radio"].active~label>.mycard {
     width: 100%;
     background-size: cover;
     background-position: center;
+    position: relative;
+    top: -145px;
+    z-index: -2 !important;
 }
 
 /* 
@@ -862,4 +869,78 @@ input[type="radio"].active~label>.mycard {
     .tactics_content div {
         display: none;
     }
+}
+
+.touch_point_section{
+    background-image: url(../assets/in-2-at-1-38x-half.png);
+    min-height: 125vh;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+    position: relative;
+    top: 300px;
+    color: black;
+}
+
+@media (max-width:576px) {
+    
+}
+
+input[type="radio"].active~label>.mycard2 {
+    opacity: 1;
+    transition: all 0.4s ease;
+}
+
+
+.image_border {
+    height: 100%;
+    width: auto;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    border-radius: 50%;
+
+}
+
+.mycard2 .card_img {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    object-fit: cover;
+    mix-blend-mode: luminosity;
+    transition: all 0.4s ease-in-out;
+}
+
+.mycard2 .card_img:hover {
+    mix-blend-mode: normal;
+    opacity: 1;
+}
+
+.mycard2 {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    align-items: center;
+    padding: 10px 20px;
+    cursor: pointer;
+    opacity: 0.3;
+}
+
+.mycard2 small {
+    font-size: 10px;
+}
+
+.quote_line2 {
+    height: 1px;
+    width: 70%;
+    margin: 0 80px;
+    margin-top: 10px;
+    background-color: green;
+}
+
+.card_quote2 {
+    margin-left: 25px;
 }

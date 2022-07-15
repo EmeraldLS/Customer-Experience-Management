@@ -1381,31 +1381,57 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    padding-top: 100px;
 }
 
 .footer_content p {
     text-align: center;
     font-size: 13px;
+    width: 65%;
+}
+
+@media (max-width:576px) {
+    .footer_content p {
+        width: 80%;
+    }
 }
 
 .sources {
     position: absolute;
     bottom: 50px;
+    left: 150px;
 }
+
+.sources ol {
+    width: 50%;
+}
+
 
 @media (max-width:820px) {
     .sources {
-        left: 75px;
+        left: 50px;
     }
 }
 
-@media (max-width:768px) {
+@media (max-width:650px) {
     .sources {
-        left: 15px;
+        left: 10px;
+        bottom: 0;
+    }
+}
+
+@media (max-width:580px) {
+    .sources ol li {
+        width: 100%;
     }
 }
 
 .sources ol li {
     font-size: 10px;
+    max-width: 80%;
+}
+
+.sources ol li small {
+    width: 100px !important;
 }

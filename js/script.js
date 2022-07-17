@@ -237,7 +237,7 @@ function cardDOMEffect2() {
                                 </strong>
                                 <div class="quote_line2"></div>
                                 <p
-                                    style="color: green; font-weight: bold;display: flex;gap: 10px;justify-content: center;cursor: pointer;">
+                                    style="#088e74; font-weight: bold;display: flex;gap: 10px;justify-content: center;cursor: pointer;">
                                     Click to Tweet <i class="fab fa-twitter fa-2x"></i></p>
                                 <img src="./assets/green-right-quote-1-half.png" alt="" class="quote_2">
                             </div>
@@ -265,7 +265,7 @@ function cardDOMEffect2() {
                                 </strong>
                                 <div class="quote_line2"></div>
                                 <p
-                                    style="color: green; font-weight: bold;display: flex;gap: 10px;justify-content: center;cursor: pointer;">
+                                    style="color: #088e74; font-weight: bold;display: flex;gap: 10px;justify-content: center;cursor: pointer;">
                                     Click to Tweet <i class="fab fa-twitter fa-2x"></i></p>
                                 <img src="./assets/green-right-quote-1-half.png" alt="" class="quote_2">
                             </div>
@@ -293,7 +293,7 @@ function cardDOMEffect2() {
                             </strong>
                             <div class="quote_line2"></div>
                             <p
-                                style="color: green; font-weight: bold;display: flex;gap: 10px;justify-content: center;cursor: pointer;">
+                                style="color: #088e74; font-weight: bold;display: flex;gap: 10px;justify-content: center;cursor: pointer;">
                                 Click to Tweet <i class="fab fa-twitter fa-2x"></i></p>
                             <img src="./assets/green-right-quote-1-half.png" alt="" class="quote_2">
                         </div>
@@ -315,7 +315,7 @@ function cardDOMEffect2() {
                                 </strong>
                                 <div class="quote_line2"></div>
                                 <p
-                                    style="color: green; font-weight: bold;display: flex;gap: 10px;justify-content: center;cursor: pointer;">
+                                    style="color: #088e74; font-weight: bold;display: flex;gap: 10px;justify-content: center;cursor: pointer;">
                                     Click to Tweet <i class="fab fa-twitter fa-2x"></i></p>
                                 <img src="./assets/green-right-quote-1-half.png" alt="" class="quote_2">
                             </div>
@@ -383,7 +383,7 @@ function cardDOMEffect3() {
                                 </strong>
                                 <div class="quote_line3"></div>
                                 <p
-                                    style="color: red; font-weight: bold;display: flex;gap: 10px;justify-content: center;cursor: pointer;">
+                                    style="color: #c61376; font-weight: bold;display: flex;gap: 10px;justify-content: center;cursor: pointer;">
                                     Click to Tweet <i class="fab fa-twitter fa-2x"></i></p>
                                 <img src="./assets/red-right-quote-half.png" alt="" class="quote_2">
                             </div>
@@ -421,7 +421,7 @@ function cardDOMEffect3() {
                                 </strong>
                                 <div class="quote_line3"></div>
                                 <p
-                                    style="color: red; font-weight: bold;display: flex;gap: 10px;justify-content: center;cursor: pointer;">
+                                    style="color: #c61376; font-weight: bold;display: flex;gap: 10px;justify-content: center;cursor: pointer;">
                                     Click to Tweet <i class="fab fa-twitter fa-2x"></i></p>
                                 <img src="./assets/red-right-quote-half.png" alt="" class="quote_2">
                             </div>
@@ -464,7 +464,7 @@ function cardDOMEffect3() {
                                 </strong>
                                 <div class="quote_line3"></div>
                                 <p
-                                    style="color: red; font-weight: bold;display: flex;gap: 10px;justify-content: center;cursor: pointer;">
+                                    style="color: #c61376; font-weight: bold;display: flex;gap: 10px;justify-content: center;cursor: pointer;">
                                     Click to Tweet <i class="fab fa-twitter fa-2x"></i></p>
                                 <img src="./assets/red-right-quote-half.png" alt="" class="quote_2">
                             </div>
@@ -511,7 +511,7 @@ function cardDOMEffect3() {
                                 </strong>
                                 <div class="quote_line3"></div>
                                 <p
-                                    style="color: red; font-weight: bold;display: flex;gap: 10px;justify-content: center;cursor: pointer;">
+                                    style="color: #c61376; font-weight: bold;display: flex;gap: 10px;justify-content: center;cursor: pointer;">
                                     Click to Tweet <i class="fab fa-twitter fa-2x"></i></p>
                                 <img src="./assets/red-right-quote-half.png" alt="" class="quote_2">
                             </div>

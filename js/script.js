@@ -159,7 +159,10 @@ cardDOMEffect()
 function sideBarScrollEffect() {
     let cap_on_pill = document.querySelector(".cap_on_pill")
     document.addEventListener("scroll", function () {
-        if (window.pageYOffset > 4000) {
+        if (window.pageYOffset > 5100) {
+            cap_on_pill.style.top = "150px"
+        }
+        else if (window.pageYOffset > 4000) {
             cap_on_pill.style.top = "115px"
         } else if (window.pageYOffset > 2270) {
             cap_on_pill.style.top = "80px"
@@ -186,6 +189,8 @@ function pillEvent() {
     let tactics_section = document.querySelector(".tactics_section")
     let pill_4 = document.querySelector("#pill_4")
     let differentiation_section = document.querySelector(".differentiation_section")
+    let pill_5 = document.querySelector("#pill_5")
+    let footer = document.querySelector("#footer")
     pill_1.addEventListener("click", function () {
         hero_section.scrollIntoView({
             behavior: "smooth"
@@ -206,6 +211,12 @@ function pillEvent() {
             behavior: "smooth"
         })
     })
+    pill_5.addEventListener("click", function () {
+        footer.scrollIntoView({
+            behavior: "smooth"
+        })
+    })
+
 }
 
 pillEvent()

@@ -479,9 +479,6 @@ body {
 }
 
 @media (max-width: 767.98px) {
-  .data_section {
-    height: 120vh;
-  }
 }
 
 .data_section_backgroundImage {
@@ -1134,17 +1131,19 @@ input[type="radio"].active ~ label > .mycard {
   .tactics_overlay {
     position: absolute;
     z-index: 0;
-    height: 105vh;
+    height: 115vh;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
   }
 
   .tactics_content img {
+    top: 0 !important;
     left: 0 !important;
   }
 
   .tactics_content .percent {
-    left: 55px !important;
+    left: 52px !important;
+    /* bottom: 0px !important; */
   }
 
   .tactics_content small {
